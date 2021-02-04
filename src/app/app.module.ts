@@ -19,7 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [AnimalsService],
+  providers: [],
   // bootstrap:[AppComponent]
   entryComponents: [AppComponent]
 })

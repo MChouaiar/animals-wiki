@@ -10,12 +10,12 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
             <div class="dropdown">
               <button class="btn btn-primary">Dropdown</button>
               <div class="dropdown-content">
-                <a *ngFor="let family of families" (click)="familySelected.emit(family)">{{family}}</a>
+                <a *ngIf="let family of families" (click)="familySelected.emit(family)">{{family}}</a>
               </div>
             </div>
         </div>
         <div class="col-4">
-          <button type="button" class="btn btn-secondary" (click)="familySelected.emit('')">Cancel filter</button>
+          <button type="button" class="btn btn-secondary" [click]="familySelected.emit('')">Cancel filter</button>
         </div>
         <div class="col-2"></div>
       </div>

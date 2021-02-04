@@ -28,9 +28,9 @@ export class AppComponent implements OnInit {
   }
 
   filterAnimalsPerFamily(family: string) {
-    if (family === '')
+    if (family === '') {
       this.filteredAnimals = this.animals;
-    else {
+    } else {
       this.filteredAnimals = this.animals.filter(animal => animal.family === family);
     }
   }

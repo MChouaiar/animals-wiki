@@ -9,7 +9,7 @@ export class AnimalsService {
   constructor(private httpClient: HttpClient) {}
 
   getAnimals() {
-    return this.httpClient.get<any>(' http://localhost:3000/animals')
+    return this.httpClient.get<any>('assets/fauna.json')
       .pipe((map((res: Animal[]) => res)));
   }
 }
